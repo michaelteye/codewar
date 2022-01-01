@@ -28,3 +28,23 @@ function doMath(s){
        res = eval(res + sign[(i-1)%sign.length] + tmp[i]);
      return Math.round(res)
 }
+// alternative
+const _ = require('lodash');
+// lodash sort is stable
+
+const numberMapper = function mapTextToTextAndNumbers(str)
+{
+  return { c: str.replace(/\d/g, ''), n: parseInt(str.replace(/[a-z]/, '')) };
+};
+
+const numberReducer = function computeSortedNumbers(p, e, i)
+{
+  let operations = [(m,n) => m+n, (m,n) => m-n, (m,n) => m*n, (m,n) => m/n];
+  return operations[i%4](p, e.n);
+};
+
+function doMath(str)
+{
+  var numbers = _.sortBy( str.split(' ').map(numberMapper), ['c']);
+  return Math.round( _.reduce( numbers.slice(1), numberReducer, numbers[0].n ) );
+}
