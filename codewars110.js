@@ -11,18 +11,8 @@ function numbersOfLetters(integer) {
     
     return result;
 }
-// alternative solution
-function digitToWord(i){
-    return ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'][i];
-  }
-  
-  function numbersOfLetters(i) {
-    var words = [i.toString().split('').map(digitToWord).join('')];
-      while(words[words.length - 1] != "four"){
-        words.push(words[words.length - 1].length.toString().split('').map(digitToWord).join(''));
-      }
-    return words;
-  }
+
+
 
 
   // alternative
