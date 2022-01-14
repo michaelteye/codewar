@@ -14,3 +14,9 @@ rec = \ f. (\ x. f (x x)) (\ x. f (x x))
 succ = \ n f x. f (n f x)
 counterN = \ f n b. b (\ b. f (succ n) b) n
 counter = rec counterN 0
+
+// alternative solution
+succ = \ n f x . f (n f x)
+fix = \ f . (\ x . f (x x)) (\ x . f (x x))
+go = fix (\ go n continue . continue (go (succ n)) n)
+counter = go 0
