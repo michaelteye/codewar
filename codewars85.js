@@ -5,7 +5,20 @@ function sortList (sortBy, list) {
   }
 
 // Alternative
-
+function sortList (sortBy, list) {
+    return list.sort(function(a, b) {    
+      if (a[sortBy] < b[sortBy]) {
+        return 1;
+      }
+      else if (a[sortBy] < b[sortBy]) {
+        return -1;
+      }
+      else {
+        return 0;
+      }
+      
+    });
+  }
 // Alternative solutions
 
   function sortList (sortBy, list) {
