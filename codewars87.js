@@ -31,37 +31,37 @@ function strCount(obj){
 }
 
 // Alternate method
-function strCount(obj){
+// function strCount(obj){
 
-    let result = [];
+//     let result = [];
     
-     let result2 = [];
-    let len = result.length
-   let arr = Object.values(obj)
-   let arr1 = arr.flat(Infinity)
-    console.log(arr1)
-   for(i=0; i<arr1.length; i++){
-     if(typeof arr1[i] === "string"){
-     result.push(arr1[i])  
-     }else if((typeof arr1[i] === "object") && arr1[i] !== null){
-       let a = Object.values(arr1[i])
-       for(j=0; j<a.length; j++){
-         if(typeof a[j] === "string")
-         result.push(a[j])
-       }
-       console.log(a)
-     }
+//      let result2 = [];
+//     let len = result.length
+//    let arr = Object.values(obj)
+//    let arr1 = arr.flat(Infinity)
+//     console.log(arr1)
+//    for(i=0; i<arr1.length; i++){
+//      if(typeof arr1[i] === "string"){
+//      result.push(arr1[i])  
+//      }else if((typeof arr1[i] === "object") && arr1[i] !== null){
+//        let a = Object.values(arr1[i])
+//        for(j=0; j<a.length; j++){
+//          if(typeof a[j] === "string")
+//          result.push(a[j])
+//        }
+//        console.log(a)
+//      }
        
-   }
+//    }
        
    
-   return result.length
+//    return result.length
      
-   }
-   strCount([
-     '1',       '2',
-     false,     'anytime',
-     2,         3,
-     4,         null,
-     undefined, {}
-   ])
+//    }
+//    strCount([
+//      '1',       '2',
+//      false,     'anytime',
+//      2,         3,
+//      4,         null,
+//      undefined, {}
+//    ])
