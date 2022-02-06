@@ -19,7 +19,7 @@ function takeNthElement(a, n) {
 const checkNthElement = (a,n)=> ((a=[...a]).splice(n, 1),a)
 
 // alternative using the filter method
-function moveNthElement(arr, nth) {
+function moveNtheslement(arr, nth) {
     // Fix it
     return arr.filter((_,i)=>i!=nth);
 }
