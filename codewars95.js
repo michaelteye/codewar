@@ -4,8 +4,8 @@ function removeNthElement(arr,n){
     return arrCopy;
 }
 //alternative solution.
-function removeNthElement(arr, n) {
-    const arrCopy = [...arr];
+function removeNthElement(myarr, n) {
+    const arrCopy = [...myarr];
     arrCopy.splice(n, 1);
     return arrCopy;
 }
