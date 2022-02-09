@@ -11,7 +11,7 @@ function removeNthElement(arr, n) {
 }
 
 // alternative
-function removeNthElement(a, n) {
+function takeNthElement(a, n) {
     return ((a=a.slice()).splice(n,1),a)
 }
 
