@@ -17,3 +17,9 @@ function removeNthElement(a, n) {
 
 //alternative
 const removeNthElement = (a,n)=> ((a=[...a]).splice(n, 1),a)
+
+// alternative using the filter method
+function removeNthElement(arr, n) {
+    // Fix it
+    return arr.filter((_,i)=>i!=n);
+}
