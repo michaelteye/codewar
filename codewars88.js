@@ -35,3 +35,18 @@ function numObj(s){
     }
     return objArr;
   }
+// Alternative method
+function numObj(s){
+    let objArr = [];
+    for(let i = 0; i < s.length; i++){
+      // {"118": "v"}
+      let numObj = {}; // {}
+      let strNum = String(s[i]); // "118"
+      numObj[strNum] = String.fromCharCode(s[i]); // {"118": ""}
+      objArr.push(numObj); // [{"118": ""}]
+    }
+    return objArr;
+  }
+
+//alternative
+const numObj = collection => collection.map(n => ({[n]: String.fromCharCode(n)}));
