@@ -22,3 +22,16 @@ function numObj(s){
       return obj;
     });
   }
+
+// Alternative method
+function numObj(s){
+
+    let objArr = [];
+    for(let i=0; i<s.length;i++){
+      let numObj = {};
+      let strNum = String(s[i]);
+      numObj[strNum] = String.fromCharCode(s[i]); //{'118': ''}
+      objArr.push(numObj); //[{'118': ""}]
+    }
+    return objArr;
+  }
