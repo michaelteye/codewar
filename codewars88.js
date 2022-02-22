@@ -13,3 +13,12 @@ function numObj(s){
       return { [n]: String.fromCharCode(n) };
     });
 }
+
+// Alternative method
+function numObj(s){
+    return s.map(n => {
+      const obj = {};
+      obj[n] = String.fromCharCode(n);
+      return obj;
+    });
+  }
