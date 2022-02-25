@@ -16,3 +16,16 @@ function strCount(obj){
     }
     return count;
     }
+
+// Alternative method
+function strCount(obj){
+    let temp = 0;
+    JSON.stringify(obj,(key,value)=>{
+        if (typeof value === 'string') {
+            temp++
+        }
+        return value;
+    })
+
+    return temp
+}
