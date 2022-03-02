@@ -38,3 +38,25 @@ var Animal = function (name, type) {
     })
    
   } 
+
+  // alternative solutions
+
+  // create your Animal class like object here
+class Animal {
+    constructor(name, type) {
+      this._name = name;
+      this._type = type;
+    }
+    toString () {
+      return `${this._name} is a ${this._type}`
+    }
+    get type () {
+      return this._type
+    }
+    get name () {
+      return this._name;
+    }
+    set name(x) {
+      this._name = x
+    }
+  }
