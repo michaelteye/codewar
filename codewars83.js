@@ -10,3 +10,10 @@ function lovefunc(flower1,flower2){
 function lovefunc(flower1, flower2){
     return flower1 % 2 !== flower2 % 2;
 }
+
+//alternate approach
+const
+lovefunc
+=( Ͼ , Ͽ )=> 
+   ! !
+( ( Ͼ & 1) ^ (1 & Ͽ ) )
