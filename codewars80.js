@@ -10,3 +10,8 @@ function greet(name){
 function greet(name){
     return "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
   }
+
+//alternative solutions
+function greet(name){
+    return name === "Johnny" ? "Hello, my love!" : "Hello, " + name + "!";
+}
