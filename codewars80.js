@@ -5,3 +5,8 @@ function greet(name){
         return "Hello, " + name + "!";
       }
   }
+
+// alternative solution
+function greet(name){
+    return "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
+  }
