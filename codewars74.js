@@ -22,4 +22,8 @@ function maps(x){
 function isDivisible(n, x, y) {
 return n % x === 0 && n % y === 0
 }
+// alternate
+function isDivisible(n, x, y) {
+    return !(n%x||n%y)
+  }
       
