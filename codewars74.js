@@ -7,3 +7,5 @@
 function maps(x){
     return x.map(y=> y *2)
   }
+  // alternative solution
+const maps = arr => arr.map( x => x * 2 )
