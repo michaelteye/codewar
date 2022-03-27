@@ -19,3 +19,13 @@ function abbrevName(name){
     }
     console.log(arguments.callee.name + ': Argument must be string!');
 }
+
+//Alternative
+function abbrevName(name){
+
+    const [firstName, lastName] = name.split(' ')
+    const firstInitial = firstName.charAt(0).toUpperCase()
+    const secondInitial = lastName.charAt(0).toUpperCase()
+    return firstInitial + '.' + secondInitial
+
+}
