@@ -11,3 +11,11 @@ function abbrevName(name){
 }
 //Alternative using ragex
 const abbrevName = name => name.match(/\b\w/g).join('.').toUpperCase()
+
+function abbrevName(name){
+    if (typeof name === 'string') {
+      let names = name.split(' ');
+      return `${names[0][0]}.${names[1][0]}`.toUpperCase();
+    }
+    console.log(arguments.callee.name + ': Argument must be string!');
+}
