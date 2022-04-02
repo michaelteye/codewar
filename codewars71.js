@@ -30,3 +30,30 @@ function basicOp(operation, value1, value2)
     return mydiv
   }
 }
+
+// using the switch case
+function basicOp(operation, value1, value2)
+{
+  // Code
+  let myadd = value1 + value2
+  let mysub = value1 - value2
+  let mymul = value1 * value2
+  let mydiv = value1 / value2
+
+    switch(operation){
+        case '+':
+          return myadd
+        break
+        case '-':
+          return mysub
+        break
+        case '*':
+          return mymul
+        break
+        case '/':
+          return mydiv
+        break
+        default: 
+          return'nothing'
+    }
+}
