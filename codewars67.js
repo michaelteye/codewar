@@ -3,6 +3,6 @@ function litres(time) {
 }
 
 //arrow function
-// const litres = (time)=>{
-//     return Math.floor(time * 0.5)
-//   }
+const litres = (time)=>{
+    return Math.floor(time * 0.5)
+  }
