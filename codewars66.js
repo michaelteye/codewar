@@ -3,7 +3,8 @@ function greet(){
   return "hello world!"
 }
 
-// const greet=()=>{
-//     return "hello world!"
-//   }
+// using the arrow function
+const greet=()=>{
+    return "hello world!"
+  }
   
