@@ -12,3 +12,15 @@ function solve(arr){
     }
   return myarr
 };
+
+//Alternative solution the problem
+
+function solve(arr){
+  let mystorage = []
+  arr.sort((a,b)=>a-b);
+for(let i=0, j= arr.length-1; i<=j; i++,j--){
+  if(i!=j) mystorage.push(arr[j]), mystorage.push(arr[i])
+  else mystorage.push(arr[i])
+}
+return mystorage
+};
