@@ -20,3 +20,13 @@ res= numbers.reduce(((a,b)=> a + (b*b)),0);
 
 return res;
 }
+// Using the forEach
+function squareSum(numbers){
+    var sum = 0
+    const numCopy = [...numbers]
+    numCopy.forEach((element) => {
+     sum += element ** 2;
+    })
+    
+    return sum
+  }
