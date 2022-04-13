@@ -11,3 +11,12 @@ function squareSum(numbers)
 function squareSum(numbers) {
     return numbers.reduce((s,a)=>s+a*a,0);
   }
+
+  //Using the reduce method
+function squareSum(numbers){
+var res=0;
+
+res= numbers.reduce(((a,b)=> a + (b*b)),0);
+
+return res;
+}
