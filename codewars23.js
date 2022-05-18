@@ -15,7 +15,6 @@ function bigToSmall(arr){
     
     var results =[]
     return results.concat(...arr).sort((a,b)=> b-a).join(">")
-  
-    
+
     
   }
