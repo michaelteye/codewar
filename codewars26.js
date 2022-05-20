@@ -1,0 +1,18 @@
+// Your job is to find the gravitational force between two spherical objects (obj1 , obj2).
+
+// input
+// Two arrays are given :
+
+// arr_val (value array), consists of 3 elements
+// 1st element : mass of obj 1
+// 2nd element : mass of obj 2
+// 3rd element : distance between their centers
+
+
+function solution([m1,m2,d],[um1,um2,ud]) {
+    const G = 6.67e-11 ;
+    const conversion = { kg:1, g:1e-3, mg:1e-6, μg:1e-9, lb:.453592
+                       , m:1, cm:1e-2, mm:1e-3, μm:1e-6, ft:.3048
+                       } ;
+    return G * m1 * conversion[um1] * m2 * conversion[um2] / ( d * conversion[ud] ) ** 2 ;
+  }
