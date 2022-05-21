@@ -16,3 +16,4 @@ function solution([m1,m2,d],[um1,um2,ud]) {
                        } ;
     return G * m1 * conversion[um1] * m2 * conversion[um2] / ( d * conversion[ud] ) ** 2 ;
   }
+  console.log(solution([1,2,3]))
