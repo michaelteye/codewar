@@ -1,39 +1,24 @@
-// Your job is to find the gravitational force between two spherical objects (obj1 , obj2).
+// Coding in function blackAndWhite. function accept 1 parameter arr(a number array).
 
-// input
-// Two arrays are given :
+// If arr is not an array, function should return:
 
-// arr_val (value array), consists of 3 elements
-// 1st element : mass of obj 1
-// 2nd element : mass of obj 2
-// 3rd element : distance between their centers
-// arr_unit (unit array), consists of 3 elements
-// 1st element : unit for mass of obj 1
-// 2nd element : unit for mass of obj 2
-// 3rd element : unit for distance between their centers
-// mass units are :
+// "It's a fake array"
+// If arr contains elements 5 and 13, function should return:
 
-// kilogram (kg)
-// gram (g)
-// milligram (mg)
-// microgram (μg)
-// pound (lb)
-// distance units are :
+// "It's a black array"
+// If arr contains neither 5 nor 13, function should return:
 
-// meter (m)
-// centimeter (cm)
-// millimeter (mm)
-// micrometer (μm)
-// feet (ft)
+// "It's a white array"
 
 
 
-
-function solution([m1, m2, r], [x, y, z]) {
-    let md = {"kg":1, "g":1e-3, "mg":1e-6, "μg":1e-9, "lb":0.453592};
-    let rd = {"m":1, "cm":1e-2, "mm":1e-3, "μm":1e-6, "ft":0.3048};
-    m1 *= md[x];
-    m2 *= md[y];
-    r *= rd[z];
-    return 6.67e-11 * m1 * m2 / (r**2);
+function blackAndWhite(arr){
+  //coding here...
+  if (!Array.isArray(arr)) {
+    return "It's a fake array";
   }
+  else if (arr.indexOf(5) !== -1 && arr.indexOf(13) !== -1) {
+    return "It's a black array";
+  }
+  return "It's a white array";
+}
