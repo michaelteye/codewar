@@ -18,3 +18,5 @@ function isPalindrome(line) {
   
   //   return undefined;
   }
+  console.log(1234)
+
