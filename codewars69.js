@@ -7,3 +7,6 @@ function century(year) {
     // Finish this :)
     return Math.floor((year-1)/100)+1
   }
+
+  //Alternative
+  const century = year => year % 100 === 0 ? parseInt(year / 100) : parseInt(year / 100) + 1;
