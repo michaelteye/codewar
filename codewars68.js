@@ -70,4 +70,4 @@ function greet(lang) {
     }, 
     defaultLanguage = 'english';
     return GreetingsDB[language] || GreetingsDB[defaultLanguage];
-  }
+}
