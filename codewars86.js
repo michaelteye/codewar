@@ -31,3 +31,15 @@ function combine() {
     }
     return result;
 }
+//New Method
+function combine(){
+    var final = {}; 
+    for(var _arg in arguments){ 
+      for(var _property in arguments[_arg]){
+        final[_property]===undefined?
+          final[_property]=arguments[_arg][_property]:
+          final[_property]+=arguments[_arg][_property];
+      }
+     }
+     return final;
+}
