@@ -12,3 +12,20 @@ Array.prototype.first = function() {
   Array.prototype.last = function() {
     return this[this.length-1];
   };
+
+//Alternative solution.
+Array.prototype.first = function() {
+    if(this.length == 0){
+      return undefined;
+    }
+    const copy = [...this];
+    return copy.shift();
+  };
+  
+  Array.prototype.last = function() {
+    if(this.length == 0){
+      return undefined;
+    }
+    const copy = [...this];
+    return copy.pop();
+  };
