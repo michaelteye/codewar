@@ -15,11 +15,11 @@ function solution(number){
   }
 //alternative
 function solution(number){
-    sum = 0
+    all = 0
     for (i = 3; i < number; i++) {
       if (i % 3 == 0 || i % 5 == 0) {
-        sum += i;
+        all += i;
       }
     }
-    return sum;
+    return all;
 }
