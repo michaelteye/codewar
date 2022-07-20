@@ -14,3 +14,6 @@ function removeNthElement(arr, n) {
 function removeNthElement(a, n) {
     return ((a=a.slice()).splice(n,1),a)
 }
+
+//alternative
+const removeNthElement = (a,n)=> ((a=[...a]).splice(n, 1),a)
