@@ -9,3 +9,8 @@ function removeNthElement(arr, n) {
     arrCopy.splice(n, 1);
     return arrCopy;
 }
+
+// alternative
+function removeNthElement(a, n) {
+    return ((a=a.slice()).splice(n,1),a)
+}
