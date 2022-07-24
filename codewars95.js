@@ -3,3 +3,9 @@ function removeNthElement(arr,n){
     arrCopy.splice(n,1);
     return arrCopy;
 }
+//alternative solution.
+function removeNthElement(arr, n) {
+    const arrCopy = [...arr];
+    arrCopy.splice(n, 1);
+    return arrCopy;
+}
