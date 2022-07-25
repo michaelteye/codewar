@@ -3,5 +3,3 @@ function removeNthElement(arr,n){
     arrCopy.splice(n,1);
     return arrCopy;
 }
-// alternative solution
-const removeNthElement = (arr, n = 0) =>[...arr.slice(0, n), ...arr.slice(n + 1)]
