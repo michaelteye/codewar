@@ -16,7 +16,7 @@ function takeNthElement(a, n) {
 }
 
 //alternative
-const removeNthElement = (a,n)=> ((a=[...a]).splice(n, 1),a)
+const checkNthElement = (a,n)=> ((a=[...a]).splice(n, 1),a)
 
 // alternative using the filter method
 function moveNthElement(arr, nth) {
