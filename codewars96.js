@@ -22,4 +22,15 @@ function getCount(str) {
 // next solution
 function getCount(str) {
     return str.replace(/[^aeiou]/gi, '').length;
-  }
+}
+
+// alternative solution
+function getCount(str) {
+    var vowelsCount = 0;
+    str.split("").forEach(function(x){
+      if(x == "a" | x == "e" | x == "i" | x == "o" | x == "u"){
+        vowelsCount += 1;
+      }
+    });  
+    return vowelsCount;
+}
