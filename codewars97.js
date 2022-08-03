@@ -6,8 +6,8 @@
 String.prototype.toJadenCase = function () {
     //...
     let sip = this.split(" ")
-    for(let i =0; i< sip.length; i++){
-      sip[i] = sip[i].charAt(0).toUpperCase() + sip[i].slice(1)
+    for(let j =0; j< sip.length; j++){
+      sip[j] = sip[j].charAt(0).toUpperCase() + sip[j].slice(1)
     }
     return sip.join(" ")
     
