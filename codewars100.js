@@ -9,4 +9,12 @@ const checkAllVowel= (myvowel)=>{
 
 console.log(checkAllVowel("the number of vowels will be shown here"))
 
+//Alternative solution
+function checkAllVowel(myvowel){
+    let allvowel = ['a','e','i','o','u'];
+    return myvowel.split().filter(trycheck=>{
+        return allvowel.includes(trycheck)? true : false
+    }).length
+}
+
 
