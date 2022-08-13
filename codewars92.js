@@ -11,3 +11,9 @@ String.prototype.contains = function(substr, sensitive = false)
 {
   return sensitive ? this.includes(substr) :this.toLowerCase().includes(substr.toLowerCase());
 }
+
+
+String.prototype.contains = function(substr, sensitivity = false)
+{
+  return sensitivity ? this.includes(substr) :this.toLowerCase().includes(substr.toLowerCase());
+}
