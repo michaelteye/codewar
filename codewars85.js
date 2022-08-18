@@ -21,7 +21,13 @@ function sortList (sortBy, list) {
   }
 // Alternative solutions
 
-
+  function sortList (sortBy, list) {
+    function cmp(value1,value2){
+     return value2[sortBy]-value1[sortBy];
+  };
+  list.sort(cmp);
+    return list;
+}
 
 
 // alternative solution
