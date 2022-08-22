@@ -62,3 +62,9 @@ function pigIt(str){
     }
     return(result);
 }
+
+// alternative solution
+function pigIt(str){
+    //Code here
+    return str.replace(/\b(\w)(\w*)\b/g,"$2$1ay");
+}
