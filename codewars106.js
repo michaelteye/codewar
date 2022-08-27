@@ -16,3 +16,14 @@ function translate(sentence) {
   };
 
 // alternative solution
+function translate(sentence) {
+    return sentence.replace(/\b([bcdfghjklmnpqrstvwxyz]*)(\w)(\w*)\b/gi, (all, cons, cap, rest) => {
+      if(!cons)
+        return all + 'way';
+      if(/[A-Z]/.test(cons[0])) {
+        cap = cap.toUpperCase();
+        cons = cons.toLowerCase();
+      }
+      return cap + rest + cons + 'ay';
+    });
+  };
