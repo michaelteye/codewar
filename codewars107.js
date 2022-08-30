@@ -27,4 +27,31 @@ addsTo=(a,t)=>{
       c+=!/[+-]0\d/.test(s)*eval(s)==t
     }
     return c
+}
+// alternative solution
+function addsTo(arr, total) {
+    let terms = [arr[0]];
+    for(let i=1; i<arr.length; ++i) {
+      terms.push('+');
+      terms.push(arr[i]);
+    }
+    let counts = 0;
+    do {
+      var carry = true;
+      
+      let pos = 1;
+      while(carry && pos < terms.length) {
+        let op = terms[pos];
+        carry = op === '';
+        terms[pos] = op == '+' ? '-' : (op == '-' ? '' : '+');
+        pos += 2;
+      }
+      
+      let expr = terms.join('');
+      if(!/\D0\d/.test(expr))
+        counts += (eval(expr) == total);
+      
+    } while (!carry);
+    
+    return counts;
   }
