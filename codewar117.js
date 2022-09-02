@@ -16,4 +16,15 @@ function mergeArrays(arr1, arr2) {
       .filter((item) => !arr2.includes(item))
       .concat(arr2)
       .sort((a, b) => a - b)
-  }
+}
+
+function mergeArrays(arr1, arr2){
+    let newArr = arr1.concat(arr2)
+    let neSet = [...new Set(newArr)]
+  
+    let newSort  = neSet.sort((a,b)=>{
+      return a-b
+    })
+    return newSort
+  
+}
