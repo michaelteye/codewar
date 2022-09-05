@@ -10,3 +10,18 @@ function solution(str){
       }
     return result;
   }
+
+// Alternative
+function solution(str){
+  let result = []
+
+  for (let i = 0; i < str.length; i += 2) {
+    if (i < str.length - 1) {
+      result.push(str[i] + str[i + 1])
+    } else {
+     result.push(str[i] + '_') 
+    }
+  }
+  
+  return result
+}
