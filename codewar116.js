@@ -9,3 +9,16 @@ function longestConsec(strarr, k){
     }
     return longest
 }
+
+// alternative solution
+const trycatch = (strings, cont)=>{
+    var highest = ""
+    for(var i = 0; cont>0 && i<=strings.length-cont;){
+        var tempArray = strarr.slice(i, i+cont);
+        var tempStr = tempArray.join("");
+        if(tempStr.length > highest.length){
+            highest = tempStr
+        }
+    }
+    return highest
+}
