@@ -4,3 +4,4 @@ function multiply(a, b){
   return me
   
 }
+//  git commit --amend --date="YYYY-MM-DD HH:MM:SS"
