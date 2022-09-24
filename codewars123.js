@@ -24,3 +24,16 @@ function mergeArrays(a, b) {
     }
     return j
   }
+
+  function mergeArrays(a, b) {
+    var answer = [];
+    
+    for (i = 0; i < Math.max(a.length, b.length); i++){
+      if (i < a.length) {answer.push(a[i]);}
+      if (i < b.length) {answer.push(b[i]);}
+    }
+    
+    return answer; 
+    
+    
+  }
