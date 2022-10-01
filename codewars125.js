@@ -9,3 +9,8 @@ function solution(value){
 function solution(value){
     return `Value is ${value.toString().padStart(5,'0')}`
 }
+
+// Alternative solution
+function solution(value) {
+    return "Value is " + new Array(6 - String(value).length).join(0) + value;
+}
