@@ -7,3 +7,13 @@ function toNumberArray(stringarray){
     }
     return results
 }
+
+// Alternative solution
+const toNumberArray = (stringarray)=>{
+    let results = []
+    stringarray.forEach((strarr)=>{
+        results.push(Number(strarr))
+    })
+    return results;
+}
+console.log(toNumberArray(["1","2","3"]))
